@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" version="28.2.7">
+<diagram name="Diagrama de Componentes - SGO" id="componentes-sgo">
+  <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <root>
+      <mxCell id="0" />
+      <mxCell id="1" parent="0" />
+
+      <!-- Interface de Usuário -->
+      <mxCell id="ui" value="Interface de Usuário" style="shape=component;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+        <mxGeometry x="60" y="60" width="180" height="80" as="geometry" />
+      </mxCell>
+
+      <!-- Módulo de Inscrições -->
+      <mxCell id="modInscricoes" value="Módulo de Inscrições" style="shape=component;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+        <mxGeometry x="320" y="60" width="180" height="80" as="geometry" />
+      </mxCell>
+
+      <!-- Módulo de Alocação -->
+      <mxCell id="modAlocacao" value="Módulo de Alocação" style="shape=component;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+        <mxGeometry x="320" y="180" width="180" height="80" as="geometry" />
+      </mxCell>
+
+      <!-- Módulo de Resultados -->
+      <mxCell id="modResultados" value="Módulo de Resultados" style="shape=component;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+        <mxGeometry x="320" y="300" width="180" height="80" as="geometry" />
+      </mxCell>
+
+      <!-- Módulo de Relatórios -->
+      <mxCell id="modRelatorios" value="Módulo de Relatórios" style="shape=component;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+        <mxGeometry x="320" y="420" width="180" height="80" as="geometry" />
+      </mxCell>
+
+      <!-- Banco de Dados -->
+      <mxCell id="bd" value="Banco de Dados" style="shape=component;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+        <mxGeometry x="600" y="240" width="180" height="80" as="geometry" />
+      </mxCell>
+
+      <!-- Conexões -->
+      <mxCell id="relUIInscricoes" style="endArrow=block;endSize=8;" edge="1" parent="1" source="ui" target="modInscricoes">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="relUIAlocacao" style="endArrow=block;endSize=8;" edge="1" parent="1" source="ui" target="modAlocacao">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="relUIResultados" style="endArrow=block;endSize=8;" edge="1" parent="1" source="ui" target="modResultados">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="relUIRelatorios" style="endArrow=block;endSize=8;" edge="1" parent="1" source="ui" target="modRelatorios">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+
+      <mxCell id="relInscricoesBD" style="endArrow=block;endSize=8;" edge="1" parent="1" source="modInscricoes" target="bd">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="relAlocacaoBD" style="endArrow=block;endSize=8;" edge="1" parent="1" source="modAlocacao" target="bd">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="relResultadosBD" style="endArrow=block;endSize=8;" edge="1" parent="1" source="modResultados" target="bd">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="relRelatoriosBD" style="endArrow=block;endSize=8;" edge="1" parent="1" source="modRelatorios" target="bd">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+
+    </root>
+  </mxGraphModel>
+</diagram>
+</mxfile>
