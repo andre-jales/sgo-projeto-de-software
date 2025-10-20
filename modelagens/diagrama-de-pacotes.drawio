@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" version="28.2.7">
+<diagram name="Diagrama de Pacotes - SGO" id="pacotes-sgo">
+  <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <root>
+      <mxCell id="0" />
+      <mxCell id="1" parent="0" />
+
+      <mxCell id="pkgCompeticoes" value="Pacote Competicoes&#xa;----------------&#xa;Classes: Competição, Local" style="shape=folder;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxGeometry x="40" y="40" width="220" height="120" as="geometry" />
+      </mxCell>
+
+      <mxCell id="pkgAtletas" value="Pacote Atletas&#xa;----------------&#xa;Classes: Atleta, País" style="shape=folder;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxGeometry x="320" y="40" width="220" height="120" as="geometry" />
+      </mxCell>
+
+      <mxCell id="pkgResultados" value="Pacote Resultados&#xa;----------------&#xa;Classe: Resultado" style="shape=folder;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxGeometry x="40" y="220" width="220" height="120" as="geometry" />
+      </mxCell>
+
+      <mxCell id="pkgRelatorios" value="Pacote Relatorios&#xa;----------------&#xa;Classe: RelatorioMedalhas" style="shape=folder;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxGeometry x="320" y="220" width="220" height="120" as="geometry" />
+      </mxCell>
+
+      <mxCell id="rel1" style="endArrow=block;endSize=8;" edge="1" parent="1" source="pkgCompeticoes" target="pkgAtletas">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="rel2" style="endArrow=block;endSize=8;" edge="1" parent="1" source="pkgCompeticoes" target="pkgResultados">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="rel3" style="endArrow=block;endSize=8;" edge="1" parent="1" source="pkgResultados" target="pkgRelatorios">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="rel4" style="endArrow=block;endSize=8;" edge="1" parent="1" source="pkgAtletas" target="pkgResultados">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+
+    </root>
+  </mxGraphModel>
+</diagram>
+</mxfile>
