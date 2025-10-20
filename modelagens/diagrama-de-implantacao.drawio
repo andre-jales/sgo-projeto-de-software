@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Diagrama de Implantação - SGO" id="JRhoY2vmjziYoaHAfjSj">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="81RKmR-tSgqumDi6Oey6-7" value="Navegador" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1320" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-10" value="Aplicação Web" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1360" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-12" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=120;entryDy=95;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=235;exitPerimeter=0;" edge="1" parent="1" source="81RKmR-tSgqumDi6Oey6-16" target="81RKmR-tSgqumDi6Oey6-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="1540" as="sourcePoint" />
+            <mxPoint x="700" y="1490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-38" value="HTTP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="81RKmR-tSgqumDi6Oey6-12">
+          <mxGeometry x="0.1696" y="-1" relative="1" as="geometry">
+            <mxPoint x="24" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-16" value="Servidor da aplicação" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="1670" width="480" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-19" value="Módulo de Inscrições" style="shape=component;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="1740" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-20" value="Módulo de Alocação" style="shape=component;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1740" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-21" value="Módulo de Resultados" style="shape=component;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="1860" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-22" value="Módulo de Relatórios" style="shape=component;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1860" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-32" value="Servidor de banco de dados" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="75" y="2130" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-37" value="PostgreSQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="120" y="2170" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-42" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=330;entryDy=245;entryPerimeter=0;exitX=0.004;exitY=0.518;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="81RKmR-tSgqumDi6Oey6-32" target="81RKmR-tSgqumDi6Oey6-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="2110" as="sourcePoint" />
+            <mxPoint x="160" y="2060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="81RKmR-tSgqumDi6Oey6-44" value="JDBC" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="81RKmR-tSgqumDi6Oey6-42">
+          <mxGeometry x="0.1682" y="-2" relative="1" as="geometry">
+            <mxPoint x="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
